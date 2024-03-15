@@ -1,0 +1,33 @@
+name: "I Love Pacman"
+author: "samdem"
+author_link: "https://github.com/samdem-ai"
+category: reverse
+difficulty: medium
+description: |
+  > I love pacman soo much that i made a clone   
+  > Can you beat it to retrieve the flag?   
+  > Note: the flag is in all lowercase letters   
+
+
+  **Author** : samdem
+flags:
+  - nexus{wh0_th0ught_y0u_W0uLd_3ver_w1n_p4cman}
+
+topics:
+  - reverse engineering
+  - game hacking
+
+tags:
+  - reverse
+
+files:
+  - ./challenge/ILovePacman.zip
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 10
+  minimum: 50
+state: hidden
+version: "0.1"
+

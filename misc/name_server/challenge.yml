@@ -1,0 +1,33 @@
+
+name: "name server"
+author: "sami_mst"
+author_link: "https://github.com/Sami-mst"
+category: misc
+difficulty: easy
+description: |
+  > can you talk with our authoritative name server ?  
+  > ip : 102.220.29.203   
+  > port : 4500  
+  > domain : nexus-security-club.com  
+  **Author** : sami_mst
+flags:
+  - nexus{d4rk_WeB_Do3snt_Us3_dNS_r1GHt?}
+
+
+
+
+topics:
+  - dns
+  - zone transfer
+tags:
+  - easy
+
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

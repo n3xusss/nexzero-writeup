@@ -1,0 +1,74 @@
+/* style.css */
+
+body {
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-align: center;
+    background-image: url('./wp3133915-umbrella-wallpapers.jpg');
+    background-size: cover;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 2rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* change to align items to the left */
+    margin-left: 2rem;
+    /* add margin to the left */
+    width: 50%;
+    /* set the width of the form to 50% */
+    max-width: 300px;
+    /* set a maximum width for the form */
+}
+
+label {
+    /* add margin to the left of the label */
+    margin-left: 1rem;
+}
+
+label {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    background-color: #222;
+    color: #fff;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #f50e0e;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+}

@@ -1,0 +1,34 @@
+
+name: "local file inclusion 1"
+author: "sami_mst"
+author_link: "https://github.com/Sami-mst"
+category: web
+difficulty: medhard
+
+description: |
+  > i hired the best security engineer !  
+  > now my website is no longer vulnerable to LFI    
+    **Author** : sami_mst
+flags:
+  - nexus{LFI2RCE?????!}
+
+
+
+connection_info: http://nex-zero.nexus-security-club.com:4007
+
+topics:
+  - medhard 
+  - lfi
+tags:
+  - lfi
+files:
+ #- dist/source.py
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

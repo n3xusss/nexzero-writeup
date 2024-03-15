@@ -1,0 +1,38 @@
+name: "Manini-Case-01"
+author: "@Houssem0x1"
+category: forensics
+difficulty: medhard
+description: |
+  > An employee's machine has been brought to your notice for analysis.   
+  > The employee is suspected of engaging in equipment abuse by contravening the company's policies.  
+  > You are requested to carry out an inquiry into the staff device to identify any evidence of improper usage. 
+  > Connect to the netcat session below and answer all the questions correctly to get the flag at the end.  
+  > File : https://drive.google.com/file/d/1AS-0jCwCrNgb0v9Eo3ZU19dzn0l4eNhm/view?usp=sharing  
+  **Author** : @Houssem0x1
+flags:
+  - nexus{w0w_1337_Certified_L1nuX_4n6_Pr4cti710n3r$$$}
+
+
+
+connection_info: nc nex-zero.nexus-security-club.com 4214 
+
+files:
+  - challenge/wordlist.txt
+topics:
+  - Disk Analysis
+  - steg
+
+tags: null
+  
+
+files: null
+
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

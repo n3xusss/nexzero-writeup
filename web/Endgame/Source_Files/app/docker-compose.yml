@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+
+  endgame:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '4014:3000'
+    healthcheck:
+      test: socat - TCP4:localhost:3000 || exit 1
+      interval: 60s
+      timeout: 2s
+      retries: 5

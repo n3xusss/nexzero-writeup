@@ -1,0 +1,32 @@
+name: "Base64"
+author: "sami_mst"
+author_link: "https://github.com/Sami-mst"
+
+category: cryptography
+
+difficulty: warmup
+
+description: |
+  >  bmV4dXN7YzBOZ1I0VCRfZm9yX2QzQ29kSW5HX3RIMSR9Cg==  
+  
+  **Author** : sami_mst
+
+flags:
+  - nexus{c0NgR4T$_for_d3CodInG_tH1$}
+
+
+hints:
+    - "if you're seeing this hint ... you have officially been disqualified"
+tags:
+  - warmup
+  - insane
+  
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+
+state: hidden
+version: "0.1"

@@ -1,0 +1,29 @@
+
+name: "Smurfette"
+author: "4NG3L"
+author_link: "https://github.com/4NG3L-4"
+category: misc
+
+difficulty: medium
+description: |
+  > Hello, I'm @smuuurfette and I'm very interested in information security.  
+
+  **Author** : 4NG3L
+flags:
+  - nexus{$tAy_uPDateD_h4ckeEUr}
+
+
+tags:
+  - OSINT
+
+
+
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

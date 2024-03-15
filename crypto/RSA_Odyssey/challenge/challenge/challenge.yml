@@ -1,0 +1,24 @@
+name: "RSA_Odyssey"
+author: "M3551"
+author_link: "author website or github link"
+category: cryptography
+difficulty: Medium
+description: |
+  > I've encrypted a flag using RSA, confident in its unbreakable security. But can you prove me wrong?     
+
+  **Author** : M3551
+flags:
+  - nexus{H0m0m0rph1sm_4nd_Cryp70_4r3_4w3s0m3}
+
+
+
+connection_info: nc nex-zero.nexus-security-club.com 4404
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

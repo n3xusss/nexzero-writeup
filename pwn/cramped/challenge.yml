@@ -1,0 +1,34 @@
+name: "cramped"
+author: "djaoued"
+author_link: ""
+category: pwn 
+difficulty: normal
+description: |
+  >  i know you are eager to get in , but it is cramped in here .  
+  >  There was a time that the pieces fit , But I watched them fall away  
+
+  **Author** : djaoued
+
+flags:
+  - nexus{1_kN0w_tH3_pieC3s_fit}
+
+
+connection_info : nc nex-zero.nexus-security-club.com 4103
+
+files:
+  - challenge/chall
+topics:
+  - pwn
+  - medium 
+
+
+
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

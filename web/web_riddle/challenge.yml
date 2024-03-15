@@ -1,0 +1,33 @@
+
+name: "WebRiddle"
+author: "h1roun"
+author_link: ""
+category: web
+difficulty: ezmed
+description: |
+  > Developer boasts server security with a 'tripwire' but hackers lurk. Can you breach and seize the flag?    
+  **Author** : h1roun  
+
+flags:
+  - nexus{SSrf_With_DNs_RebiNd1nG_15_am4z1NG}
+
+connection_info: http://nex-zero.nexus-security-club.com:4028/
+
+files:
+  - ./challenge/Source.tar
+
+
+
+
+
+
+
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

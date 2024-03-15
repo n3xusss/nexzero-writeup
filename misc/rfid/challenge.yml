@@ -1,0 +1,26 @@
+name: "rfid"
+author: "muhammad"
+author_link: "https://github.com/muhammedBkf"
+
+category: misc
+
+difficulty: easy
+
+description: |
+  > We found these suspicious cards can you help up reading its content  
+
+flags:
+  - nexus{m1f4r3_5upp0r75_3nrcyp710n_u53_17!!!}
+
+tags:
+  - hardware
+
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

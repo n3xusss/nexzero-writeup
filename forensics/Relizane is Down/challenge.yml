@@ -1,0 +1,40 @@
+name: "Relizane is Down"
+author: "@Houssem0x1"
+author_link: null
+category: forensics
+difficulty: easy
+description: |
+  > The Relizane City residents' community blog's server has been compromised. Our efforts to look into the matter and follow the hacker's trail are fully committed. Please assist us in advancing this investigation by obtaining the following information:  
+  > The IP adress of the attacker.    
+  > The IP adress of the compromised server.  
+  > The name of the compromised web-server deployed in the enviroment.(lowercase)  
+  > The version of this compromised web-server.  
+  
+  Flag format: nexus{AttackerIP_VictimIP_WebServerName_WebsServerVersion}  
+
+  **Author** : @Houssem0x1  
+  **Co-author** : 0utc4s7  
+flags:
+  - nexus{169.150.218.87_138.197.142.254_apache_2.4.41}
+
+
+
+connection_info: null
+
+topics: null
+
+tags:
+   - easy 
+
+files:
+  - challenge/relizane.pcapng
+
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

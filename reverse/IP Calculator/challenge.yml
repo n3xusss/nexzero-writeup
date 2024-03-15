@@ -1,0 +1,34 @@
+
+name: "Ip Calculator"
+author: "haio / samdem"
+author_link: "https://github.com/samdem-ai"
+category: reverse
+difficulty: easy
+description: |
+  > i just made an ip calculator in python but it seems to not work correctly           
+  > can you help know why      
+
+  **Author** : haio / samdem
+flags:
+  - nexus{pyth0n_wh3n_c0mp1led_15_l3ss_easy_th4n_1t_seems}
+
+
+
+
+topics:
+  - reverse engineering
+
+tags:
+  - python
+  - reverse
+
+files:
+  - ./challenge/ipCalculator.zip
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 30
+    minimum: 50
+state: hidden
+version: "0.1"

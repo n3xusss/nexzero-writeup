@@ -1,0 +1,33 @@
+
+name: "gopx"
+author: "samdem"
+author_link: "https://github.com/samdem-ai"
+category: reverse
+difficulty: medium
+description: |
+  > The GOPX binary holds a mystery.   
+  > Something seems amiss when analyzed in reverse – can you unravel the reason?  Uncover its secrets.   
+
+
+  **Author** : samdem
+flags:
+  - nexus{P4ck1ng_Plus_G0l4ng_1s_th3_w0rst_c0mB1natI0n}
+
+
+topics:
+  - reverse engineering
+
+tags:
+  - reverse
+
+
+files:
+  - ./challenge/gopx.apk
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

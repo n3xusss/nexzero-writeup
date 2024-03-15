@@ -1,0 +1,35 @@
+
+name: "no_mistakes"
+author: "sami_mst"
+author_link: "https://github.com/Sami-mst"
+category: cryptography
+difficulty: medium
+description: |
+  > hahaha ... don't even try ! you cannot make sense of this encrypted message  
+  > supposedly , it was made by a strong encryption algorithm  
+    **Author** : sami_mst
+flags:
+  - nexus{0n3_Byt3_l0ng_k3y_15_n0t_s3cure}
+
+
+
+tags:
+  - ezmed
+topics:
+  - python
+  - crypto
+  - xor
+tags:
+  - python
+files:
+ - challenge/encryption.py
+ - challenge/encrypted.txt
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

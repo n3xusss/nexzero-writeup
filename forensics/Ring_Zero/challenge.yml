@@ -1,0 +1,40 @@
+name: "Ring Zer0"
+author: "@Houssem0x1"
+author_link: null
+category: forensics
+description: |
+  > The SOC has escalated a case to you in which a deployment server has been compromised, and attackers may have placed a backdoor in the system. This one should probably be utilized to gain root access.   
+  
+  > Please retrieve in order:  
+  
+  >     - backdoor name (with extension).  
+  >     - the core adress of the backdoor in memory (in hex).  
+  >     - An extra argument has been given to the command that loaded the backdoor (for encryption purposes), but resulted with an *error*. What is the name of this argument.  
+  
+  >  Flag: nexus{backdoor.ext_0xaaabbbccc123_ArgumentName}  
+
+  **Author** : @xHoussem0x1
+flags:
+  - nexus{diamorphine.ko_0xffffffffc067d000_crc65_key}
+
+
+
+connection_info: https://drive.google.com/file/d/13cG8BF8bFGtWG7t66DYVW8CsHdLn37qO/view?usp=sharing
+
+topics: 
+    - memory forensics
+
+tags: 
+    - memory dump
+
+files: null
+  
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

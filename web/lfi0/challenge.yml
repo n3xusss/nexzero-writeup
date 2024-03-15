@@ -1,0 +1,33 @@
+
+name: "local file inclusion 0"
+author: "sami_mst"
+author_link: "https://github.com/Sami-mst"
+category: web
+difficulty: easy
+description: |
+  >  the website is still under construction ...  
+  >  think you can manage to steal system files ?  
+  >  flag is at : /flag.txt  
+
+  **Author** : sami_mst
+flags:
+  - nexus{L0cal_F1le_1inclu5ion_go3s_BRRRRRR}
+
+
+
+connection_info: http://nex-zero.nexus-security-club.com:4005
+
+topics:
+  - easy 
+  - lfi
+
+ #- dist/source.py
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

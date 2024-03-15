@@ -1,0 +1,22 @@
+name: "Discord bug"
+author: "Sh0z3n"
+category: misc
+description: |
+  > Deep inside this server , th3re is a channel , a very special channel  
+  > Flag is in format nexus{hidden_channel_name}  
+
+  **author**: Sh0z3n
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 10
+  minimum: 50
+flags:
+  - nexus{h1dd3n_w3ll_215}
+tags:
+  - Discord
+
+
+state: hidden
+version: "0.1"

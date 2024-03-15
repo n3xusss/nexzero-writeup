@@ -1,0 +1,32 @@
+
+name: "Demacia"
+author: "Eve_SatOrU"
+author_link: "https://github.com/Eve-SatOrU"
+category: web
+difficulty: easy
+description: |
+  > My heart and sword always for Demacia
+  > won't you ?  
+  **Author** : Eve_SatOrU
+flags:
+  - nexus{This_is_so_ez_right}
+
+
+
+
+connection_info: http://nex-zero.nexus-security-club.com:4003
+
+topics:
+
+tags:
+  - web
+
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

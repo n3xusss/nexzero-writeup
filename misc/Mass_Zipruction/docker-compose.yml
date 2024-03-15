@@ -1,0 +1,5 @@
+services:
+  server:
+    build: ./Source_Files
+    ports:
+      - 4506:1337

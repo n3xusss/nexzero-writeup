@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title File View
+    link(rel="stylesheet", href="css/profile.css")
+  body
+    .container
+      h1 File View
+      if fileContent
+        p File ID: #{fileContent.id}
+        p File Name: #{fileContent.name}
+        if flag
+          p.bold Flag: #{flag}
+      else
+        p File not found
+      p.center Don't try to see the other File Documents of users

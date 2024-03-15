@@ -1,0 +1,31 @@
+name: "keys&IVs"
+
+
+category: cryptography
+
+difficulty: ezmed
+description: |
+  >  i heard you are specialist in AES , can you retrieve my data?
+  > here all what you need:
+  
+  **Author**: mo_4m1n3
+flags:
+  - nexus{C0nGr4ts_Y0u_f0uNd_Th3_k333y}
+topics:
+  - cryptography
+  
+
+
+files:
+  - ./keys&IVs.txt
+  - ./c.txt
+  
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

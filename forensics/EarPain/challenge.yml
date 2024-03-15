@@ -1,0 +1,28 @@
+name: "EarPain"
+author: "@Houssem0x1"
+author_link: 
+category: forensics
+difficulty:
+description: |
+  > Listen to this symphony, Imagine the scene and spot the flag!  
+
+  **Author** : @Houssem0x1
+flags:
+  - nexus{GG_Y0u_C4ugh7_mY_SSTV_Tr4nSmm1ti0n$$}
+
+
+
+
+
+
+files: 
+  - challenge/EarPain.wav
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

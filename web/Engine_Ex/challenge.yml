@@ -1,0 +1,30 @@
+name: "Engine Ex"
+author: "0utc4st"
+author_link: "https://cybersecfun.pythonanywhere.com/"
+category: web
+difficulty: easy
+description: |
+  > Are you familiar with the Trojan Horse story ?  
+
+  **Author** : 0utc4st
+flags:
+  - nexus{Pr0x1y1ng_C4n_B3_D4ng3r0uS$ssss}
+
+topics:
+  - web
+  - nginx misconfiguration
+  - unsafe path restriction
+
+files:
+  - ./source.tar
+
+
+connection_info: http://nex-zero.nexus-security-club.com:4009
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

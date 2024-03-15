@@ -1,0 +1,33 @@
+name: "filter"
+author: "djaoued"
+author_link: ""
+category: pwn 
+difficulty: normal
+description: |
+  >  hmm thats a nice page , hope nothing bad will happen to it ....  
+
+  **Author** : djaoued
+
+flags:
+  - nexus{H0p3_tHru_h0op5}
+
+
+
+topics:
+  - pwn
+
+files:
+  - challenge/chall
+
+connection_info: nc nex-zero.nexus-security-club.com 4102
+
+Notes: 
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

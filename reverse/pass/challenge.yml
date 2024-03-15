@@ -1,0 +1,31 @@
+name: "pass"
+author: "djaoued"
+author_link: ""
+
+category: reverse
+
+difficulty: hard
+
+description: |
+  > just pass  
+  
+  **Author** : djaoued
+
+flags:
+  - nexus{We_Ar3_N0w_Rur5tAc3anS}
+
+connection_info: nc nex-zero.nexus-security-club.com 4601
+
+files:
+  - ./challenge/pass
+tags :
+  - medium
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+
+state: hidden
+version: "0.1"

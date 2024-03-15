@@ -1,0 +1,37 @@
+name: "doubles"
+author: "djaoued"
+author_link: ""
+category: pwn 
+difficulty: normal
+description: |
+  >  fool me once shame on me , fool me twice .....
+
+  **Author** : djaoued
+
+flags:
+  - nexus{Dup3d_aNd_f1ag3d}
+
+
+
+topics:
+  - pwn 
+  
+tags:
+  - pwn
+ 
+files:
+  - ./challenge/chall
+  - ./challenge/ld.so.2
+  - ./challenge/libc.so.6
+
+connection_info: nc nex-zero.nexus-security-club.com 4104
+Notes: 
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

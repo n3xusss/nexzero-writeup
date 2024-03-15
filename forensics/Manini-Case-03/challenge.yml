@@ -1,0 +1,33 @@
+name: "Manini-Case-03"
+author: "@Houssem0x1"
+category: forensics
+difficulty: medhard
+description: |
+  > Part 3 of Manini case  
+  **Author** : @Houssem0x1
+flags:
+  - nexus{w0w_1337_Certified_L1nuX_4n6_ExP3r7!!!}
+
+
+
+connection_info: nc nex-zero.nexus-security-club.com 4212 
+
+topics:
+  - Disk Analysis
+  - steg
+
+tags: null
+  
+
+files: null
+
+requirements:
+    - "Manini-Case-02"
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

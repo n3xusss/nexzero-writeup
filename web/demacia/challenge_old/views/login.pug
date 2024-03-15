@@ -1,0 +1,17 @@
+html
+  head
+    title Login page
+    link(rel='stylesheet', href='/css/style.css')
+  body
+  h1 Login
+  form(action='/login', method='post')
+    .row
+      label(for='username') Username:
+      input(type='text', id='username', name='username', required='true' placeholder="guest")
+    .row
+      label(for="password") Password
+      input(type='password', id='password', name='password', required='true')
+    button(type="submit") Login
+    if error
+      p.error= error
+    p Don't have an account? Use guest account ^^

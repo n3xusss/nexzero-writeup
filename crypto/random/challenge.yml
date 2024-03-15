@@ -1,0 +1,34 @@
+name: "random"
+author: "muhammad"
+author_link: "https://github.com/muhammedBkf"
+
+category: cryptography
+
+difficulty: medium
+
+description: |
+  > Can you guess the next random number?  
+
+flags:
+  - nexus{m3r53nn3_7w1573r_15_n07_cryp706r4ph1c4lly_53cur3}
+
+connection_info : nc nex-zero.nexus-security-club.com 4465
+
+tags:
+  - python
+  - prng
+
+files:
+  - chall/app.py
+
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"
+
+

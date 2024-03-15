@@ -1,0 +1,34 @@
+
+name: "as above so below"
+author: "djaoued"
+author_link: 
+category: pwn
+difficulty: hard
+description: |
+  >  Thou who are pwners, are chosen.
+  >  In thine exodus from the userland , maketh pilgrimage to the land of ring zero.
+  >  When thou ringeth the Bell of the root shell , the flag thou shalt now
+
+  **Author** : djaoued
+flags:
+  - nexus{N0w_yOu_dW31l_k3Rnel_lAnd}
+
+
+
+connection_info: nc nex-zero.nexus-security-club.com:4100
+
+
+files:
+  - ./attachments/run.sh
+  - ./attachments/bzImage
+  - ./attachments/initramfs.cpio
+  - ./attachments/pwnme.ko
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

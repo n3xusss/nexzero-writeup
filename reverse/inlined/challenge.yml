@@ -1,0 +1,28 @@
+name: "inlined"
+author: "djaoued"
+author_link: ""
+
+category: reverse
+
+difficulty: easy
+
+description: |
+  > hidden in plain sight   
+  
+  **Author** : djaoued
+
+flags:
+  - nexus{1Nlin3D_5tAtm3Nts_r0cK}
+
+files:
+  - ./challenge/inlined
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+
+state: hidden
+version: "0.1"

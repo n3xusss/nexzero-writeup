@@ -1,0 +1,38 @@
+name: "Relizane is Down 2"
+author: "@Houssem0x1"
+author_link: null
+category: forensics
+difficulty: medium
+description: |
+  > The attacker and with the help of some tools, managed to get admin creds and accessed the admin dashboard where he abused a vulnerable plugin to read sensitive system files.  
+  
+  > Mention the names of two tools that the attacker used in the attack. (alphabetical order and lowercase)  
+  > What is the username and the password of the admin account?   (lowercase) 
+  > What is the name of the plugin? (lowercase)  
+  Flag format: nexus{ToolOne_ToolTwo_user:pass_PluginName}  
+
+  **Author** : @Houssem0x1  
+  **Co-author** : 0utc4s7  
+flags:
+  - nexus{sqlmap_wpscan_huhu:relizane48_includeme}
+
+
+
+connection_info: null
+
+topics: null
+
+
+
+files: null
+
+requirements:
+    - "Relizane is Down"
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

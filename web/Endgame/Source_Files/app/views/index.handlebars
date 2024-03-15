@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <title>Certificate Generator</title>
+    <style>
+        body {
+            font-family: "Anta", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background-color: #1B1919;
+            background-image: url("https://nex-zero-client.vercel.app/assets/firstsec.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: 50% 50%;
+            background-size: 100%;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 100%;
+            height: 700px;
+            margin: 50px auto;
+            padding: 200px;
+            padding-left: 500px;
+            padding-right: 500px;
+            background-color:transparent;
+            backdrop-filter: blur(8px);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            align-items: center;
+        }
+
+        h1 {
+            color: #F05323;
+            text-align: center;
+            color: #F05323;
+            text-shadow: 0 0 1px #F05323, 0 0 7px #F05323, 0 0 9px #F05323;
+            font-size: 50px;
+        }
+
+        label {
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 10px;
+            width: 100px;
+            color: #fff;
+        }
+
+        input[type="text"] {
+            font-family: "Anta", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            display: inline-block;
+            border: none;
+            border-bottom: solid rgb(143, 143, 143) 1px;
+            margin-bottom: 30px;
+            background: none;
+            color: #ffffffe8;
+            height: 50px;
+            width: 100%;
+            font-size: 24px;
+            padding-left: 8px;
+            box-sizing: border-box;
+            outline: none;
+        }
+        input:focus{
+            border: none;
+            border-bottom: solid rgb(253, 253, 253) 1px;
+            margin-bottom: 30px;
+            background: none;
+            color: #ffffffe8;
+            padding-left: 8px;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        button {
+            background-color:transparent;
+            font-family: "Anta", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            border: 2px solid  #f05323bb;
+            font-size:30px;
+            display: block;
+            width: 100%;
+            height: 60px;
+            padding: 10px;
+            color: #F05323;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.2s ease-in;
+        }
+
+        button:hover {
+            background-color: #f05323bb;
+            color: #000;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Certificate Generator</h1>
+        <form id="certificateForm">
+            <label for="name">Enter Name:</label>
+            <input placeholder="John Doe" type="text" id="name" name="name" required>
+            <button type="button" onclick="generateCertificate()">Generate Certificate</button>
+        </form>
+    </div>
+<script>
+function generateCertificate() {
+    const name = document.getElementById('name').value;
+    const formData = { name: name };
+
+    fetch('/generate', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => {
+        if (response.ok) {
+            return response.blob();
+        }
+        throw new Error('Network response was not ok.');
+    })
+    .then(blob => {
+        const url = window.URL.createObjectURL(new Blob([blob]));
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute('download', 'certificate.pdf');
+        document.body.appendChild(link);
+        link.click();
+    })
+    .catch(error => console.error('Error:', error));
+}
+
+document.getElementById('certificateForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    generateCertificate();
+});
+</script>
+
+</body>
+</html>
+

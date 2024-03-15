@@ -1,0 +1,29 @@
+name: "Born 2 Root"
+author: "0utc4st"
+author_link: "https://cybersecfun.pythonanywhere.com/"
+category: misc
+difficulty: hard
+description: |
+  > Follow the path that calls to your heart, for it knows the way even when your mind is uncertain.  
+  > PS: Yes you need to create an account if you don't have one 😉  
+
+  **Author** : 0utc4st
+flags:
+  - NEXUS{66765defc7f1cbedbc8fbc9e055a81db}
+
+topics:
+  - Boot2Root
+  - LFI
+  - Privilege Escalation
+
+files:
+  - ./challenge/challenge.jpg
+
+value: 999
+type: dynamic
+extra:
+    initial: 999
+    decay: 15
+    minimum: 50
+state: hidden
+version: "0.1"

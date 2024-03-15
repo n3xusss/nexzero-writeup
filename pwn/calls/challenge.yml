@@ -1,0 +1,33 @@
+
+name: "calls"
+author: "djaoued"
+author_link: 
+category: pwn
+difficulty: hard
+description: |
+  > your efforts are in vain , for my binary is empty , BEGONE 
+
+  **Author** : djaoued
+flags:
+  - nexus{b33p_b00p_s1GnAl_f0R_The_win}
+
+
+
+connection_info: nc nex-zero.nexus-security-club.com 4101
+
+topics:
+
+tags:
+  - binary
+
+files:
+  - ./challenge/chall
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

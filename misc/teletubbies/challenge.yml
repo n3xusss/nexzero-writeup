@@ -1,0 +1,31 @@
+
+name: "teletubby"
+author: "sami_mst"
+author_link: "https://github.com/Sami-mst"
+category: misc
+difficulty: easy
+description: |
+  > i have always wished to know more about teletubbies  
+  > don't you ?  
+    **Author** : sami_mst
+flags:
+  - nexus{4mAz1Ng_1nJ3CT1On_p4L}
+
+
+
+connection_info: nc nex-zero.nexus-security-club.com 4505
+
+topics:
+  - sql
+
+files:
+ - challenge/challenge.py
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

@@ -1,0 +1,37 @@
+name: "monGOal"
+author: "E!B1g-R0m1"
+author_link: "https://github.com/AbdouRoumi"
+
+category: pwn
+
+difficulty: easy
+
+description: |
+  > W ya l MonGOal orGOss m3ana , wya l monGOal.  
+    
+  **Author** : E!B1g_R0m1
+
+flags:
+  - nexus{Wya_1monGO1_orG0ss_m3ana_W_Ya_1monGOL}
+
+
+connection_info: nc nex-zero.nexus-security-club.com 4123
+
+files:
+  - ./chall/monGOal
+
+tags:
+  - easy
+
+value: 500
+
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 15
+    minimum: 50
+
+state: hidden
+
+version: "0.1"

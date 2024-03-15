@@ -1,0 +1,34 @@
+name: "Exfiltration Pro Max"
+author: "@Houssem0x1"
+author_link: null
+category: forensics
+difficulty: medium
+description: |
+  > As a member of "The Plaid Parliament of Forensics" team, you were assigned an intriguing case involving the CEO of Alpha Inc.'s computer, which has been exhibiting peculiar behavior recently and raises suspicions of compromise. Fortunately, the company's network technician is consistently monitoring and capturing network traffic to ensure the security of the system. We are Afraid of Exfiltarion! Are you able to investigate the incident?   
+  
+
+  **Author** : @Houssem0x1
+flags:
+  - nexus{D4TA_Exfl1tr4ti0n_Via_TCP_Flags$$$}
+
+
+
+connection_info: null
+
+topics:
+  - Network forensics
+
+
+  
+
+files:
+  - challenge/capture.pcapng
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

@@ -1,0 +1,34 @@
+
+name: "stupid contract"
+author: "sami_mst"
+author_link: "https://github.com/Sami-mst"
+category: misc
+difficulty: easy
+description: |
+  > so i just hid my flag in the most secure and confidential place in the world ...  
+  > the "Blockchain" , you can't find it ...  
+  > however if you give me some crypto to my address "0x0496770aE1Fe22A4407e6B3c2C661E6b0EC4C067" 
+  > i might consider giving you the flag  
+  > ps : it's in the sepolia ethereum network  
+  **Author** : sami_mst
+flags:
+  - nexus{N0thing_iS_inv1sibl3_1n_Th3_Bl0ckCh4ain}
+
+
+
+
+topics:
+  - blockchain
+  - smart_contract
+tags:
+  - blockchain
+
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

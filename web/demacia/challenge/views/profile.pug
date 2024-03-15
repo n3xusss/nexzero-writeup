@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title User Profile
+    link(rel='stylesheet', href='/css/profile.css')
+  body
+  .content
+    .container
+      h1 User Profile :#{userProfile.name}
+      if userProfile
+        p User ID: #{userProfile.id}
+        p Name: #{userProfile.name}
+      else
+        p User not found
+      a.link(href=`/file?file_id=${userProfile.id}&owner_id=${userProfile.id}`) Document file

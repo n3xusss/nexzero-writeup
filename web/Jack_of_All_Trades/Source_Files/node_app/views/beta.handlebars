@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Executer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        form{
+            margin: 20px;
+            margin-right: 40px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        pre {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .intro {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to JS Executer</h1>
+        <div class="intro">
+            <p>This is a beta version of JS Executer. The idea behind it is to give students the ability to execute JavaScript easily with one click and in a safe environment. The JavaScript code does not pass through any dangerous functions like <code>eval()</code> in our app. In fact, the code is being executed in a completely different application.</p>
+            <p>Enjoy!</p>
+        </div>
+        <h2>Execute JavaScript</h2>
+        <form id="jsForm">
+            <label for="jsCode">Enter JavaScript code:</label><br>
+            <textarea id="jsCode" name="code" rows="10" cols="50"></textarea><br>
+            <button type="submit">Execute</button>
+        </form>
+
+        <div id="resultContainer" style="display: none;">
+            <h2>Execution Result:</h2>
+            <pre id="result"></pre>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('jsForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(this);
+            const jsCode = formData.get('code');
+
+            const response = await fetch('/beta', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ code: jsCode })
+            });
+
+            const resultData = await response.json();
+            const resultContainer = document.getElementById('resultContainer');
+            const resultElement = document.getElementById('result');
+
+            resultElement.textContent = JSON.stringify(resultData, null, 4);
+            resultContainer.style.display = 'block';
+        });
+    </script>
+</body>
+</html>

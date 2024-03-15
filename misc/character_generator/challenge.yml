@@ -1,0 +1,32 @@
+
+name: "character generator"
+author: "sami_mst"
+author_link: "https://github.com/Sami-mst"
+category: misc
+difficulty: ezmed
+description: |
+  > welcome , can you generate an admin_character ?  
+    **Author** : sami_mst
+flags:
+  - nexus{Br34K_Th3_Py_J4IL_WiTh_Cls5es}
+
+
+
+connection_info: nc nex-zero.nexus-security-club.com 4504
+
+topics:
+  - python
+  - pyjail
+tags:
+  - python
+files:
+ - challenge/pyjail.py
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

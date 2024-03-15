@@ -1,0 +1,37 @@
+name: "LilHoven"
+author: "E!B1g-R0m1"
+author_link: "https://github.com/AbdouRoumi"
+
+category: misc
+
+difficulty: easy
+
+description: |
+  > In LA AmizouRe we live, and in LALALAND we die.  
+  > flag format nexus{}  
+
+  **Author** : E!B1g_R0m1
+
+flags:
+  - nexus{u-x1Ttl3_Ho0VEen!HoWdiDU_FINdme3!?}
+
+
+
+files:
+  - ./src/challenge.zip
+
+tags:
+  - easy
+
+value: 500
+
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 15
+    minimum: 50
+
+state: hidden
+
+version: "0.1"

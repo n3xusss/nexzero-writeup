@@ -1,0 +1,35 @@
+
+name: "Please"
+author: "samdem"
+author_link: "https://github.com/samdem-ai"
+category: reverse
+difficulty: easy-med
+description: |
+  > You have to be real polite to get this flag    
+
+
+  **Author** : samdem
+flags:
+  - nexus{p4tch1ng_4pps_15_d0p3}
+
+
+
+
+topics:
+  - reverse engineering
+  - android application
+
+tags:
+  - android
+  - reverse
+
+files:
+  - ./challenge/please.apk
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

@@ -1,0 +1,28 @@
+name: "Sanity check"
+author: "Sh0z3n"
+category: Welcome
+description: |
+  > check our insta page.  
+  > don't forget to like our posts :)  
+
+  **author**: Sh0z3n  
+
+
+
+value: 150
+
+
+type: dynamic
+
+
+extra:
+  initial: 150
+  decay: 10
+  minimum: 50
+flags:
+  - nexus{y0u_4re_n0t_r3ady}
+tags:
+  - Misc
+
+state: hidden
+version: "0.1"

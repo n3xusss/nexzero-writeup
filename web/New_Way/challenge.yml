@@ -1,0 +1,29 @@
+name: "New Way"
+author: "0utc4st"
+author_link: "https://cybersecfun.pythonanywhere.com/"
+category: web
+difficulty: easy
+description: |
+  > In life, we choose our own paths, don't let others do that for you.  
+
+  **Author** : 0utc4st
+flags:
+  - nexus{4s_TH3y_S4y___N3w_L1n3_N3w_W4y}
+
+topics:
+  - filter bypass
+  - blind command execution
+
+files:
+  - Source_Files/Source_Files.zip
+
+
+connection_info: http://nex-zero.nexus-security-club.com:4012
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

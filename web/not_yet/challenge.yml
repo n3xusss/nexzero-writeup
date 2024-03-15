@@ -1,0 +1,22 @@
+name: "not_yet"
+author: "M3551"
+author_link: "author website or github link"
+category: web
+difficulty: medium
+description: |
+  >  Think you're almost there? Not yet  
+
+  **Author** : M3551
+flags:
+  - nexus{Uuuu__m45t3rrrrr__pHp_uPl04d_Vulnerabilities-}
+
+
+connection_info: http://nex-zero.nexus-security-club.com:4033
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

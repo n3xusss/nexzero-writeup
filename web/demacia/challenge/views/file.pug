@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title File View
+    link(rel="stylesheet", href="css/profile.css")
+  body
+  .content
+    .container
+      h1 File View
+      if fileContent
+        p File ID: #{fileContent.id}
+        br
+        p File Quote: #{fileContent.name}
+        br
+        if flag
+          p.bold Flag: #{flag}
+      else
+        p File not found

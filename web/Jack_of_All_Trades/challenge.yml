@@ -1,0 +1,30 @@
+name: "Jack of All Trades"
+author: "0utc4st"
+author_link: "https://cybersecfun.pythonanywhere.com/"
+category: web
+difficulty: hard
+description: |
+  > What a fun collab! well, at least for us :wink:  
+
+  **Authors** : 0utc4st & not1cyyy
+flags:
+  - nexus{00ps1Es_d1dNt_MEan_t0_C0nfuse_y0U_tw1c3}
+
+topics:
+  - algorithm confusion
+  - blind rce
+
+files:
+  - Source_Files/source_code.zip
+
+connection_info: http://nex-zero.nexus-security-club.com:4050
+
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

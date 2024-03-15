@@ -1,0 +1,30 @@
+name: "Remote Digital Problems"
+author: "@Houssem0x1"
+author_link: null
+category: forensics
+difficulty: easy
+description: |
+  > As a member of a DFIR team, you are looking into a possible security breach that occurred on a company network. Possible illegal access using Remote connections has been discovered during preliminary investigation. It is your responsibility to examine the cache files that you took from the infected system in order to compile information and piece together the attacker's path.    
+ 
+
+  **Author** : @Houssem0x1
+flags:
+  - nexus{Intr0_t0_RDP_C4ch3_4n6$$$}
+
+
+
+connection_info: null
+
+topics: null
+
+files:
+  - challenge/Cache.zip
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

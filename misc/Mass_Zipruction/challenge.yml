@@ -1,0 +1,30 @@
+name: "Mass Zipruction"
+author: "0utc4st"
+author_link: "https://cybersecfun.pythonanywhere.com/"
+category: misc
+difficulty: easy
+description: |
+  > A single spark can ignite a wildfire  
+
+  **Author** : 0utc4st
+flags:
+  - nexus{Z1p_1s_4_Bl3$$1ng_4nd_4_Cur$3}
+
+topics:
+  - inefficient filtering
+  - path traversal
+
+files:
+  - Source_Files/Source_files.tar
+
+
+connection_info: nc nex-zero.nexus-security-club.com 4506
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

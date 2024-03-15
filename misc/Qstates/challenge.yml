@@ -1,0 +1,36 @@
+name: "Qstates"
+
+
+category: misc 
+
+difficulty: Easy
+description: |
+  >  What Is The Probability Of Getting The State |01110⟩ using 221 as a Seed ?  
+  >  The probability is rounded on 12th digit after the comma (for example : 0.1536776492648 will be : 0.153677649265)  
+  > Flag is in Format : nexus{the_rounded_probability}  
+  
+  **Author**: Shoz3n
+flags:
+  - nexus{0.033493649365}
+
+topics:
+  - Quantum 
+  - Misc
+  
+tags:
+  - Qunatum
+
+
+files:
+  - ./challenge/l33t.qasm
+  - ./challenge/transpiled.py
+  
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

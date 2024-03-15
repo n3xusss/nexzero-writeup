@@ -1,0 +1,32 @@
+name: "Perpetrator"
+author: "@Houssem0x1"
+author_link: null
+category: forensics
+difficulty: medium
+description: |
+  > This elusive perpetrator, known for their craftiness, has managed to infiltrate a secure network, leaving behind a trail of  data on their compromised machine.  
+  > Your mission is to delve into the memory dump of his machine, analyze artifacts, and extract evidence that could reveal the extent of the criminal's activities.  
+  
+  **Author** : @Houssem0x1
+flags:
+  - nexus{WIN_M3M_4n6$$$}
+
+
+
+connection_info: https://drive.google.com/file/d/12gSS17o3rOT89PJgipDy1t70Lte6ORMu/view?usp=sharing
+
+topics:
+  - memory forensics
+
+ 
+files: null
+  
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

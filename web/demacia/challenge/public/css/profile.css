@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  /* background-color: rgb(255, 255, 255); */
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/1098178.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  filter: blur(5px); /* Adjust the blur intensity */
+  z-index: -1; /* Send the pseudo-element to the background */
+}
+
+.loader-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 10px solid rgba(0, 0, 0, 0.562); /* Light grey */
+  border-top: 10px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.bgVid {
+  position: fixed;
+  top: 0;
+  z-index: -20;
+}
+
+.vid {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 79.3vh;
+  color: red;
+}
+
+.hero {
+  text-align: center;
+  width: 70vw;
+  margin: auto;
+}
+
+.header {
+  height: 60px;
+  color: white;
+  display: flex;
+  font-size: 0.9rem;
+  column-gap: 0.7rem;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(1px);
+}
+
+.header-item {
+  transition: all 0.5s;
+  padding: 0.4rem;
+}
+
+.header-item:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 5px;
+  margin: auto;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  backdrop-filter: blur(1px);
+}
+
+.heading {
+  color: rgb(0, 0, 0);
+  font-size: 5rem;
+  font-size: 7rem;
+  font-weight: 400;
+  letter-spacing: 6px;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bgImg {
+  position: fixed;
+  top: 0;
+  z-index: -30;
+  height: 100vh;
+  width: 100vw;
+  object-fit: fill;
+  background-size: cover;
+  background-image: url("img.jpeg");
+  background-position: center;
+  display: none;
+}
+
+.footer-item {
+  color: white;
+  padding: 5px;
+}
+.footer-item:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+::selection {
+  background-color: red;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .heading {
+    font-size: 5.4rem;
+  }
+
+  .header-item {
+    font-size: 0.8rem;
+    column-gap: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .heading {
+    font-size: 5rem;
+  }
+
+  .header-item {
+    font-size: 0.7rem;
+    padding: 2px;
+  }
+}
+
+@media (max-width: 340px) {
+  .heading {
+    font-size: 4rem;
+  }
+
+  .header-item {
+    font-size: 0.6rem;
+    padding: 2px;
+  }
+}
+
+@media (max-width: 290px) {
+  .heading {
+    font-size: 3rem;
+  }
+
+  .header-item {
+    font-size: 0.5rem;
+    padding: 1px;
+  }
+}
+
+@media (max-width: 230px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .header-item {
+    font-size: 0.4rem;
+    padding: 0px;
+    column-gap: 0.5ren;
+  }
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+input{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 300px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: red;
+
+}
+.login{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: red;
+  /* shodow */
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+button{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  text-align: center;
+  /* center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: black;
+  cursor: pointer;
+  height: 30px;
+  width: 100px;
+}
+button:hover{
+  background-color: white;
+  color: red;
+  transition: 0.5s;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 500px;
+  /* box */
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.link{
+  /* text-decoration: none; */
+  color: blue;
+  font-size: 1.5rem;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  /* without border */
+  border: 0px solid black;
+  text-decoration: underline;
+}
+.link:hover{
+  color: red !important;
+  transition: 0.5s;
+  text-decoration: underline;
+
+
+}
+h1{
+  color: red;
+  font-size: 2rem;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}

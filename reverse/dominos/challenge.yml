@@ -1,0 +1,26 @@
+name: DominosPhrydos
+category: reverse
+points: 500
+description: |
+  Can you conquer the challenge and unravel the Android mystery?  
+  **author** : h1roun  
+files:
+  - ./mapping.txt
+  - ./app.apk
+
+tags:
+  - android
+
+flags:
+  - nexus{Fr1d4_1s_Fun_Andr01d_G4m3_0bfuscat10n_H0oker}
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+
+state: hidden
+version: "0.1"
+

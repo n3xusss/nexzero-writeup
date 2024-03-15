@@ -1,0 +1,6 @@
+version: '3'
+services:
+  php_app:
+    build: ./app
+    ports:
+      - "4033:80"

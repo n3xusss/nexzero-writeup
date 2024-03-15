@@ -1,0 +1,31 @@
+name: "Taher's secret"
+
+
+category: cryptography
+
+difficulty: easy
+description: |
+  >  just Search for Elgamal !  
+  **Author**: mo_4m1n3  
+flags:
+  - nexus{t4h4r_3lgamal_Crypt0_sy$t3m}
+
+topics:
+  - cryptography
+  
+tags:
+  - crypto
+
+
+files:
+  - ./enc.txt
+  
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

@@ -1,0 +1,31 @@
+
+name: "time traveler"
+author: "h1roun"
+author_link: ""
+category: web
+difficulty: easy
+description: |
+  >  there used to be a flag in this route /flag  
+
+  **Author** : h1roun
+flags:
+  - nexus{wHo_$41D_Y0U_caNT_TraV3L_B4CK_In_TIme}
+
+
+connection_info: http://nex-zero.nexus-security-club.com:4025
+
+topics:
+  - web 
+  - lfi
+
+
+ #- dist/source.py
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

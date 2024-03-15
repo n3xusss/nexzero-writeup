@@ -1,0 +1,31 @@
+name: "Endgame"
+author: "0utc4st"
+author_link: "https://cybersecfun.pythonanywhere.com/"
+category: web
+difficulty: hard
+description: |
+  > Transforming the ordinary into a weapon, it exploits our trust in the familiar.  
+
+  **Author** : 0utc4st
+flags:
+  - nexus{1f_Y0u_$33_Th1s_Th3n_Y0u_4r3_4_L3g3nd}
+
+topics:
+  - web
+  - DNS Rebinding
+
+
+connection_info: http://nex-zero.nexus-security-club.com:4014/ 
+
+files:
+  - Source_Files/source.tar
+
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

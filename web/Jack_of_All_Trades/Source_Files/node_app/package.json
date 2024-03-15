@@ -1,0 +1,22 @@
+{
+  "name": "smth",
+  "version": "1.0.0",
+  "description": "this is something, plz like share and subscribe",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "smth"
+  ],
+  "author": "OTAKOS",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^5.3.2",
+    "fast-jwt": "^3.3.0",
+    "fs": "^0.0.1-security",
+    "hoek": "^4.2.0",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,28 @@
+name: "WebRiddle-V1.2"
+author: "h1roun"
+author_link: ""
+
+category: web
+
+difficulty: medhard
+
+
+description: |
+ > Post-pwnage, the developer bolstered security, restricting crawling to internal domain requests. Deploying new fixes, they claim safety. Can you find a way to breach and seize the flag?  
+ > **Author** : h1roun  
+
+flags: 
+  - nexus{dns_R3b1nding_c4n_t4ke_R3venge_0N_l0calhost_bl4kl1ist}
+
+connection_info: http://nex-zero.nexus-security-club.com:4029/
+
+files:
+  - ./v2-source.tar
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden

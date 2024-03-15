@@ -1,0 +1,24 @@
+meta(charset="UTF-8")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+title Demacia
+link(rel="stylesheet", href="/css/style.css")
+.bgImg
+.content
+  .hero
+    h1.heading Demacia
+    h1.info My heart and sword always for Demacia
+    .login
+      h1.go Login
+      form(action="/login", method="post")
+        .row
+          label(for="username") Username:
+          input#username(type="text", name='username', required='true' placeholder="guest")
+        .row
+          label(for="password") Password:
+          input#password(type="password", name='password', required='true')
+        button(type="submit") Login
+        br
+        if error
+          p.error= error
+        br
+        p Don't have an account? Use guest account ^^

@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  bind9:
+    container_name: name-server
+    image: ubuntu/bind9:latest
+    environment:
+      - BIND9_USER=root
+      - TZ=Europe/Berlin
+    ports:
+      - "4500:53/tcp"
+      - "4500:53/udp"
+    volumes:
+      - ./challenge/config:/etc/bind
+      - ./challenge/cache:/var/cache/bind
+      - ./challenge/records:/var/lib/bind
+  hidden:
+    build: ./challenge/hidden_service
+    ports:
+      - "4511:80"

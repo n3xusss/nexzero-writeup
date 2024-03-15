@@ -1,0 +1,27 @@
+name: "lost"
+author: "muhammad & l1ch_k1ng"
+author_link: "https://github.com/muhammedBkf"
+
+category: misc
+
+difficulty: easy
+
+description: |
+  > Our fellow pirate friend has gotten lost in the forest of a random island and he sent us a call for help  it's IMPORTANT to follow the second path  
+
+  **Author : muhammad & l1ch_k1ng**
+flags:
+  - nexus{AHOYSAVER}
+
+tags:
+  - hardware
+
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

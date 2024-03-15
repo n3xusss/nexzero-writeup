@@ -1,0 +1,40 @@
+name: "Relizane is Down 3"
+author: "@Houssem0x1"
+author_link: null
+category: forensics
+difficulty: medium
+description: |
+  > As mentioned earlier, the attacker managed to read sensitive system files; What is the UID of Mysql user ?  
+  > The attacker tried to read a popular web-server configuration file; this one usually used to get command execution, but he failed at the end. what is the name of this file? (with extension and lowercase)       
+  > The attacker seems that he misused a theme template to place his shell. In which page he placed his shell ? (with extension)      
+  > What is the first command he executed after getting a shell ?  
+  > What is the password of Mysql database ?     
+  
+  
+  Flag format: nexus{MysqlUID_ServerFile.ext_WebShellFile.ext_FirstCommand_dbPassword} 
+
+  **Author** : @Houssem0x1  
+  **Co-author** : 0utc4s7  
+flags:
+  - nexus{112_access.log_404.php_pwd_huhu2024}
+
+
+
+connection_info: null
+
+topics: null
+
+
+files: null
+
+requirements:
+    - "Relizane is Down 2"
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

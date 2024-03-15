@@ -1,0 +1,27 @@
+name: "LOL"
+author: "0utc4st"
+author_link: "https://cybersecfun.pythonanywhere.com/"
+category: cryptography
+difficulty: easy
+description: |
+  > Come, i'll take you back to World War 1  
+  > PS: convert the result to lowercase.  
+
+  **Author** : 0utc4st
+flags:
+  - nexus{l0l_th4t_w4s_mors3_4ft3r_4ll}
+
+topics:
+  - crypto
+
+files:
+  - Source_Files/LOL.txt
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

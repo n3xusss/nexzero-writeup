@@ -1,0 +1,5 @@
+services:
+  server:
+    build: .
+    ports:
+      - 4410:1337

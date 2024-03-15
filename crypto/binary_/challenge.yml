@@ -1,0 +1,30 @@
+
+name: "binary?"
+author: "sami_mst"
+author_link: "https://github.com/Sami-mst"
+category: cryptography
+difficulty: ezmed
+description: |
+  > i encoded the flag using ones and zeros   
+  **Author** : sami_mst
+flags:
+  - nexus{L33T_H3x_Encod3R}
+
+
+
+
+topics:
+  - encoding
+tags:
+  - encoding
+files:
+  - challenge/flag.txt
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

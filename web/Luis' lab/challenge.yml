@@ -1,0 +1,32 @@
+name: "luis lab"
+
+
+category: web
+
+difficulty: easy-med
+description: |
+  >  Can You Help Leon to Get The treament for  Plagas Virus  
+  >  it's in Luis Lab but i think it's protected  
+  
+  **Author**: mo_4m1n3
+flags:
+  - nexus{JWT_0R_TyP3_JugGlling_WHo_knows???}
+topics:
+  - web/crypto
+  
+tags:
+  - web/crypto
+
+
+connection_info: http://nex-zero.nexus-security-club.com:4026
+
+  
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

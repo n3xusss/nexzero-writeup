@@ -1,0 +1,28 @@
+name: "infinity"
+author: "djaoued"
+author_link: ""
+
+category: reverse
+
+difficulty: hard
+
+description: |
+  > it was too big to be called a binary , indeed it was a heap of raw asm 
+  
+  **Author** : djaoued
+
+flags:
+  - nexus{M0v_0nLy_a5s3mBly}
+
+files:
+  - ./challenge/infinity
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+
+state: hidden
+version: "0.1"

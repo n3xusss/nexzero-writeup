@@ -1,0 +1,32 @@
+
+name: "Mine Craft"
+author: "sami_mst"
+author_link: "https://github.com/Sami-mst"
+category: misc
+difficulty: ezmed
+description: |   
+  > can you mine and craft the missing BYTES ?  
+
+  **Author** : sami_mst
+flags:
+  - nexus{goTT4_RuN_Fr0M_crE3P3r$}
+
+
+
+
+topics:
+  - information disclosure
+
+
+files:
+  - ./challenge/minecraft.jpeg
+
+
+value: 500
+type: dynamic
+extra:
+    initial: 500
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"

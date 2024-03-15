@@ -1,0 +1,33 @@
+
+name: "E221"
+author: "4NG3L"
+author_link: "https://github.com/4NG3L-4"
+
+
+difficulty: easy
+description: |
+  > Our SOC was going into an audit session today, Miss Keen wanted to test our analysts threat hunting skills.  
+  > Can you help hunting the 3 parts of the flag?  
+  > Link: https://n3xz3r0.kb.europe-west9.gcp.elastic-cloud.com:9243/  
+  > Credentials: ctf-player:ctf-player   
+
+  **Author**: 4NG3L  
+
+flags:
+  - nexus{oh_4nALy$t_tIM3l1Ne_quERY_inv3sTIG4t3_R3P0rt}
+
+
+tags:
+  - Elastic Security
+
+
+
+value: 500
+type: dynamic
+extra:
+    initial: 100
+    decay: 10
+    minimum: 50
+state: hidden
+version: "0.1"
+

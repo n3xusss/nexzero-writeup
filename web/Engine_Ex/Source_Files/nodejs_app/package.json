@@ -1,0 +1,13 @@
+{
+    "name": "nodejs_app",
+    "version": "1.0.0",
+    "description": "Node.js application for CTF Challenge",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "dependencies": {
+      "express": "^4.17.2"
+    }
+  }
+  
